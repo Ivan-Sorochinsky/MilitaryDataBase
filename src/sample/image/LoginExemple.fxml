@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="8.0" layoutY="101.0" text="Добро пожаловать в MilitaryDataBase" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="168.0" text="- Быстрый доступ" textFill="WHITE" />
+      <Label layoutX="57.0" layoutY="216.0" text="- Актуальная информация" textFill="WHITE" />
+      <Label layoutX="57.0" layoutY="192.0" text="- Экономия времени" textFill="WHITE" />
+      <ImageView fitHeight="439.0" fitWidth="700.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@20d1e9ff-3d12-4401-8987-7c75b7d243a2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="368.0" text="Created by Ivan.Sorochinsky ver.0.1" textFill="#6b6161" />
+      <AnchorPane layoutX="409.0" layoutY="32.0" opacity="0.38" prefHeight="336.0" prefWidth="269.0" style="-fx-background-color: #0E3817;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+         <children>
+            <Label layoutX="60.0" layoutY="59.0" text=" Авторизация" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="33.0" layoutY="125.0" prefHeight="26.0" prefWidth="183.0" promptText="Логин" />
+            <TextField layoutX="33.0" layoutY="178.0" prefHeight="26.0" prefWidth="183.0" promptText="Пароль" />
+            <Button layoutX="189.0" layoutY="236.0" mnemonicParsing="false" text="Войти" />
+            <CheckBox layoutX="23.0" layoutY="239.0" mnemonicParsing="false" text="Запомнить меня" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
