@@ -1,8 +1,14 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Controller {
 
@@ -18,7 +24,18 @@ public class Controller {
     @FXML
     void initialize(){
    signButton.setOnAction(event -> {
-       System.out.println("Fvfbfbf");
+       signButton.getScene().getWindow().hide();
+       FXMLLoader loader = new FXMLLoader();
+       loader.setLocation(getClass().getResource("app.fxml"));
+       try {
+           loader.load();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+       Parent root = loader.getRoot();
+       Stage stage = new Stage();
+       stage.setScene(new Scene(root));
+       stage.showAndWait();
    });
     }
 
